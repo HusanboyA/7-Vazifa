@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin head($weigh, $size, $line__height) {
+    color: #002959;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    font-family: "Inter";
+    font-size: $size;
+    font-weight: $weigh;
+    line-height: $line__height;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .header__info {
+        h1 {
+            @include head(600, 61px, 70px);
+        }
+
+        p {
+            @include head(400, 20px, 28px)
+        }
+
+        a {
+            margin: auto;
+            @include btn(270px)
+        }
+    }
+    
+    .img1{
+        position: absolute;
+        top: 125px;
+    }
+    .img2{
+        position: absolute;
+        right: 0;
+        top: -8px;
+    }
+}

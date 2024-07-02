@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+@mixin btn($swidth) {
+    background: #EC6C21;
+    color: #fff;
+    padding: 18px 30px;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    width: $swidth;
+    transition: all 0.7s ease-out;
+
+    &:hover {
+        background: #fff;
+        color: #EC6C21
+    }
+}
+
+@import "./navbar";
+@import "./header";
+@import "./div";
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.container2 {
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 116px;
+}
